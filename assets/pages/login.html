@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login.style.css">
+  <link rel="stylesheet" href="../css/global.css">
+
+  <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+
+  <title>Recipe Food | Web App</title>
+</head>
+<body>
+  <header></header>
+  <section class='container'>
+  <div class="container-logo">
+    <img src="../image/logo.png" alt="Mama Recipe" class='logo'>
+    <h5 class='text-logo'>Mama Recipe.</h5>
+  </div>
+  <div class="login">
+    <h2>Welcome</h2>
+    <h4>Log in into your exiting account</h4>
+    <form action="register" class='form-login'>
+      <div class="c-form">
+        <label for="email" class='email'>E-mail</label>
+        <input type="text" id='email' name='email' placeholder='E-mail' required>
+
+        <label for="password" class='email'>Password</label>
+        <input type="password" id='password' name='password' placeholder='Password' required>
+
+        <div class="checkbox">
+          <input type="checkbox" id='agree' name='agree' class='t-checkbox' required>
+          <label for="agree">I agree to terms & conditions</label>
+        </div>
+        
+        <input type="submit" value='Log in' class='submit'>
+      </div>
+    </form>
+    <div class='fw'>
+      <a href="#" class='forgot'>Forgot Password?</a>
+    </div>
+
+    <p>Don’t have an account? <a href="#" class='signup'>Sign Up</a></p>
+  </div>
+  </section>
+</body>
+</html>
