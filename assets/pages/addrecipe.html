@@ -39,50 +39,23 @@
     <div class="box-container">
       <div class="box">
         <div class='container-one'>
-          <h1 class='title'>Loream Sandwich</h1>
-          <div class ='box-image'>
-            <img src="../image/dt-recipe.jpg" alt="Sandwich">
-            <div class="action">
-              <img src="../image/icon/bookmark.svg" alt="bookmark" class='icon-action bg-bookmark'>
-              <img src="../image/icon/like.svg" alt="like" class='icon-action'>
-            </div>
+          <div class="input-image">
+            <input type="image" id='image' src='../image/icon/image.svg'>
+            <label for="image" name='image' class='label-image'>Add image</label>
+          </div>
+          <div class="input-gr">
+
+            <label for="title" name='title'></label>
+            <input type="text" id='title' class='input-title' placeholder='Title'>
+            
+            <textarea name="ingredients" id="ingredients" cols="30" rows="10" class='input-ingredients'></textarea>
+
+            <label for="vidio" name='vidio'></label>
+            <input type="textare" id='vidio' class='input-vidio' placeholder='Vidio'>
+            
           </div>
         </div>
-        <div class='container-two'>
-          <h2 class='txt'>Ingredients</h2>
-          <p class='txt-recipe'>
-            - 2 eggs
-            <br>
-            - 2 tbsp mayonnaise
-            <br>
-            - 3 slices bread
-            <br>
-            - a little butter
-            <br>
-            - ⅓ carton of cress
-            <br>
-            - 2-3 slices of tomato or a lettuce leaf
-             and a slice of ham or cheese
-             <br>
-            - crisps , to serve
-          </p>
-          <h2 class='txt'>Vidio Step</h2>
-          <button class='play'>
-            <img src="../image/icon/play.svg" alt="">
-          </button>
-          <textarea name="comment" id="comment" cols="100" rows="10" class='comment' placeholder='Comment'></textarea>
-        </div>
-        <button class='btn-send'>Send</button>
-        <div class="box-comment">
-          <h2 class='txt'>Comment</h2>
-          <div class="user-comment">
-            <img src="../image/user.png" alt="">
-            <div class="box-comment-user">
-              <h4>Ayudia</h4>
-              <p>Nice Recipe. Simple and Delicious, Thankyou</p>
-            </div>
-          </div>
-        </div>
+        <button class='btn-send mb-footer'>Send</button>
       </div>
     </div>
   </section>
