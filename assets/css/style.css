@@ -1,0 +1,251 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
+@font-face {
+  font-family: airbnb;
+  src: url('../font/AirbnbCereal.otf');
+}
+
+.nav-style {
+  margin-top: 3rem;
+}
+
+.nav-color {
+  background-color: var(--global-color-primary) !important;
+  width: 100%;
+}
+
+.text-nav {
+  color: var(--global-text-secondary) !important;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.text-nav:hover {
+  color: var(--global-color-secondary) !important;
+}
+
+.box-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--global-color-primary) !important;
+}
+
+.box{
+  width: 80%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.container-one {
+  flex-direction: column;
+}
+
+.box-image img {
+  width: 60rem;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin-top: 5rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--global-text-secondary) !important;
+  margin-top: 3rem;
+}
+
+.txt {
+  margin-top: 6rem;
+  color: #3F3A3A;
+  font-size: 2.8rem;
+  font-family: var(--global-font-family);
+
+}
+
+.container-two {
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.txt-recipe {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.play {
+  margin-top: 2rem;
+  width: 35rem;
+  height: 7rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--global-color-secondary);
+  cursor: pointer;
+  animation-duration: 0.9m;
+}
+
+.play:hover {
+  background-color: #c7c7c7;
+}
+
+.play:focus {
+  outline: none;
+}
+
+.comment {
+  padding: 1.5rem;
+  margin-top: 15rem;
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #ffffff;
+  font-size: 2rem;
+}
+
+.comment:focus {
+  outline-color: var(--global-color-secondary);
+}
+
+.btn-send {
+  margin-top: 5rem;
+  width: 40rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--global-color-secondary);
+  cursor: pointer;
+  color: white;
+}
+
+.btn-send:hover {
+  background-color: #c7c7c7;
+}
+
+.btn-send:focus {
+  outline: none;
+}
+
+.box-comment {
+  width: 65%;
+  margin-bottom: 20rem;
+}
+
+.user-comment {
+  display: flex;
+  align-items: center;
+}
+
+.user-comment img {
+  margin-top: 1rem;
+  height: 6.4rem;
+  width: 6.4rem;
+  object-fit: cover;
+  border-radius: 3.2rem;
+}
+
+.box-comment-user {
+  margin-left: 1rem;
+}
+
+.box-comment-user h4 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--global-font-family);
+}
+
+.box-comment-user p {
+  font-size: 1.8rem;
+  font-family: var(--global-font-family);
+}
+
+.container-footer {
+  height: 40rem;
+  width: 100%;
+  background-color: var(--global-color-secondary);
+}
+
+.container-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-footer .box-txt-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-footer .box-txt-footer h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--global-text-secondary);
+}
+
+.container-footer .box-txt-footer p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #707070 !important;
+  color: var(--global-text-secondary);
+}
+
+.container-footer .cr {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  width: 25%;
+}
+
+.container-footer .cr ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.container-footer .cr ul li a {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.pijarcamp {
+  position: absolute;
+  bottom: 2rem;
+  right: 20rem;
+  font-size: 2rem;
+}
+
+.pijarcamp p {
+  color: #000;
+  font-weight: 500;
+}
+
+

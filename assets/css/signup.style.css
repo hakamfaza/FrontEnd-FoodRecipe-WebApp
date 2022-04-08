@@ -20,6 +20,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: var(--global-color-primary);
+  overflow: hidden;
 }
 
 .container-logo {
@@ -66,8 +67,9 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 50vw;
-  height: 100vh;
+  height: 120vh;
   background-color: var(--global-color-primary);
+  overflow-x: scroll;
 }
 
 .login h2 {
@@ -93,7 +95,7 @@ body {
   flex-direction: column;
 }
 
-.login .form-login input[type=password], input[type=text], input[type=submit], select {
+.login .form-login input[type=password], input[type=number], input[type=text], input[type=submit], select {
   width: 37rem;
   padding: 1.2rem 2rem;
   border: .1rem solid #8692A6;
@@ -103,7 +105,7 @@ body {
   border: none;
 }
 
-.login .form-login input[type=password], input[type=text]:focus {
+.login .form-login input[type=password], input[type=number], input[type=text]:focus {
   outline-color: #ffd92f;
 }
 
@@ -132,6 +134,7 @@ body {
 
 .t-checkbox {
   accent-color: var(--global-color-secondary);
+  cursor: pointer;
 }
 
 .login .form-login .submit {
@@ -141,20 +144,12 @@ body {
   color: var(--global-text-primary);
   border: none;
   padding: 1.5rem 0rem 1.5rem 0rem;
+  cursor: pointer;
 }
 
 .login .form-login .submit:hover {
   background-color: #ffd92f;
   color: #818181;
-}
-
-.login .fw {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 37rem;
 }
 
 .login p {
