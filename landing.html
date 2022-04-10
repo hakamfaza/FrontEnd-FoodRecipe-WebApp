@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/global.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Recipe Food | Web App</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ps-a">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-style" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-nav" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nav" href="#">Add Recipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-nav" href="#">Profile</a>
+        </li>
+      </ul>
+      <div class='secondary-navbar'>
+        <ul>
+          <li>
+            <a href="./assets/pages/login.html" class='login'>
+              <div class="icon">
+                <img src="./assets/image/icon/login.svg" alt="">
+              </div>
+            Login
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="hero">
+      <div class="content">
+        <div class="cover">
+          <h1 class='txt-hero'>Discover Recipe & Delicious Food</h1>
+          <div class="search">
+            <img src="./assets/image/icon/search.svg" alt="">
+            <input type="text" placeholder='Search Recipe' class='input'>
+          </div>
+        </div>
+      </div>
+      <div class="decoration">
+        <div class="bg">
+          <img src="./assets/image/Vector BG.png" alt="Background Vector" class='vector-one'>
+          <img src="./assets/image/Vector BG.png" alt="Background Vector" class='vector-two'>
+          <div class="food-decoration">
+            <img src="./assets/image/vegetable.png" alt="vegetable" class='vegetable'>
+            <img src="./assets/image/food1.png" alt="Food" class='food'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='title-recipe'>
+    <div class="box-popular"> 
+      <h1 class='txt-title'>Popular For You</h1>
+      <img src="./assets/image/vector2.png" alt="Vector" class='vector'>
+      <div class="wrapping-image container">
+        <div class="food row col-6">
+          <a href="#">
+            <img src="./assets/image/pizza.jpg" alt="Pizza Lamoa" class='food-image'> 
+            <h4>Pizza Lamoa</h4>
+          </a>
+        </div>
+        <div class="food row col-6">
+          <a href="#">
+            <img src="./assets/image/burger.jpg" alt="King Burger" class='food-image'> 
+            <h4>King Burger</h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="box-new-recipe">
+        <h1 class='txt-title'>New Recipe</h1>
+        <div class="container">
+          <div class="bx-n">
+            <div class='row'>
+              <div class="bx-n-primary col">
+                <div class="bg-image">
+                  <img src="./assets/image/burger2.jpg" alt="Burger" class='img-nr'>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="bx-n-secondary col">
+                <h1 class='txt-recipe-two'>Healthy Bone Broth Ramen (Quick & Easy)</h1>
+                <div class='line'></div>
+                <p>Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That’s right!</p>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-ls-popular">
+        <h1 class='txt-title'>Popular Recipe</h1>
+        <div class="container">
+          <div class="row box-one">
+            <div class="col-4">
+              <div class="box-image">
+                <a href="#">
+                 <img src="./assets/image/1.jpg" alt="Chicken Kare">
+                 <h4>Chicken Kare</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="box-image">
+                <a href="#">
+                 <img src="./assets/image/2.jpg" alt="Bomb Chicken">
+                 <h4>Bomb Chicken</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="box-image mb-5">
+                <a href="#">
+                 <img src="./assets/image/3.jpg" alt="Banana Smothie Pop">
+                 <h4 class='w-text'>Banana Smothie Pop</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row box-two">
+            <div class="col-4">
+              <div class="box-image">
+                <a href="./detailrecipe.html">
+                 <img src="./assets/image/4.jpg" alt="Coffe Lava Cake">
+                 <h4>Coffe Lava Cake</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="box-image">
+                <a href="#">
+                 <img src="./assets/image/5.jpg" alt="Sugar Salmon">
+                 <h4>Sugar Salmon</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="box-image mb-5 six">
+                <a href="#">
+                 <img src="./assets/image/6.jpg" alt="Indian Salad">
+                 <h4>Indian Salad</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <footer>
+    <div class="container-footer">
+      <div class="box-txt-footer">
+        <h1>Eat, Cook, Repeat</h1>
+        <p>Share your best recipe by uploading here !</p>
+      </div>
+      <div class="cr">
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Get in touch</a></li>                
+        </ul>
+      </div>
+      <div class='pijarcamp'>
+        <p>© PijarCamp</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
