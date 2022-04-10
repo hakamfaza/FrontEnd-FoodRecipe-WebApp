@@ -1173,3 +1173,8 @@ color: #ffe058
     width: 20rem;
   }
 }
+
+.txt-float {
+  width: 33rem;
+  text-align: center;
+}
