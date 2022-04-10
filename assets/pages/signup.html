@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/signup.style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/global.css">
 
   <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
@@ -12,43 +12,44 @@
   <title>Recipe Food | Web App</title>
 </head>
 <body>
-  <header></header>
-  <section class='container'>
-  <div class="container-logo">
-    <img src="../image/logo.png" alt="Mama Recipe" class='logo'>
-    <h5 class='text-logo'>Mama Recipe.</h5>
-  </div>
-  <div class="login">
-    <h2>Let’s Get Started !</h2>
-    <h4>Create new account to access all features</h4>
-    <form action="register" class='form-login'>
-      <div class="c-form">
-        <label for="name" class='input'>Name</label>
-        <input type="text" id='name' name='name' placeholder='Name' required>
-
-        <label for="email" class='input'>Email Address</label>
-        <input type="text" id='email' name='email' placeholder='Enter email address' required>
-
-        <label for="phone" class='input'>Phone Number</label>
-        <input type="number" id='phone' name='phone' placeholder='08xxxxxxxxxx' required>
-
-        <label for="password" class='input'>Create New Password</label>
-        <input type="password" id='password' name='password' placeholder='Create New Password' required>
-
-        <label for="password" class='input'>New Password</label>
-        <input type="password" id='password' name='password' placeholder='New Password' required>
-
-        <div class="checkbox">
-          <input type="checkbox" id='agree' name='agree' class='t-checkbox' required>
-          <label for="agree">I agree to terms & conditions</label>
-        </div>
-        
-        <input type="submit" value='Register Account' class='submit'>
+  <section>
+    <div class="container-action">
+      <div class="container-logo">
+        <img src="../image/logo.png" alt="Mama Recipe" class='logo'>
+        <h5 class='text-logo'>Mama Recipe.</h5>
       </div>
-    </form>
-
-    <p>Already have account? <a href="./login.html" class='register'>Log in Here</a></p>
-  </div>
+      <div class="auth height-form">
+        <h2>Let’s Get Started !</h2>
+        <h4>Create new account to access all features</h4>
+        <form action="register" class='form-auth'>
+          <div class="c-form">
+            <label for="name" class='input-form'>Name</label>
+            <input type="text" id='name' name='name' placeholder='Name' required>
+    
+            <label for="email" class='input-form'>Email Address</label>
+            <input type="text" id='email' name='email' placeholder='Enter email address' required>
+    
+            <label for="phone" class='input-form'>Phone Number</label>
+            <input type="number" id='phone' name='phone' placeholder='08xxxxxxxxxx' required>
+    
+            <label for="password" class='input-form'>Create New Password</label>
+            <input type="password" id='password' name='password' placeholder='Create New Password' required>
+    
+            <label for="password" class='input-form'>New Password</label>
+            <input type="password" id='password' name='password' placeholder='New Password' required>
+    
+            <div class="checkbox">
+              <input type="checkbox" id='agree' name='agree' class='t-checkbox' required>
+              <label for="agree">I agree to terms & conditions</label>
+            </div>
+            
+            <input type="submit" value='Register Account' class='submit'>
+          </div>
+        </form>
+    
+        <p>Already have account? <a href="./login.html" class='register'>Log in Here</a></p>
+      </div>
+    </div>
   </section>
 </body>
 </html>
