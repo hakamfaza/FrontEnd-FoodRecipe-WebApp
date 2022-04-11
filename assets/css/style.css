@@ -455,24 +455,28 @@ cursor: pointer;
   }
   .bg-image img {
     margin-left: -5rem !important;
-    width: 35rem !important;
-    height: 35rem !important;
+    width: 30rem !important;
+    height: 30rem !important;
+  }
+  .vegetable, .food {
+    width: 40rem !important;
+    height: 40rem !important;
+    right: 5rem !important;
   }
   .bx-n-secondary {
     margin-left: 4rem;
   }
   .bx-n-secondary h1 {
     font-size: 5rem !important;
-    width: 40rem !important;
+    width: 35rem !important;
   }
   .bx-n-secondary p {
     width: 35rem !important;
   }
 }
 
-/* Login */
 
-/*  */
+/* Detail Recipe */
 
 .box-container {
   display: flex;
@@ -707,6 +711,37 @@ cursor: pointer;
   font-weight: 500;
 }
 
+@media screen and (max-width: 720px) {
+  .box-image img {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .play {
+    width: 25rem;
+    height: 6rem;
+  }
+  .box-comment {
+    width: 100%;
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .box-image img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+  .btn-send {
+    margin-left: 0.2rem !important;
+  }
+}
 
 /* Style Add Recipe */
 
@@ -960,7 +995,7 @@ cursor: pointer;
   top: -8rem;
   background-color: var(--global-color-secondary);
   width: 5%;
-  height: 123vh;
+  height: 130vh;
 }
 
 .box-vidio {
@@ -1000,7 +1035,6 @@ cursor: pointer;
 
 .ct-list {
   margin-top: 5rem;
-  margin-left: -5rem;
   width: 25%;
   height: 100vh;
 }
@@ -1042,7 +1076,6 @@ cursor: pointer;
     flex-direction: column;
     align-items: center;
     width: auto;
-    /* height: 200vh !important; */
     z-index: 9;
   }
   .list-vidio {
@@ -1054,15 +1087,121 @@ cursor: pointer;
     z-index: 9;
   }
   .display-vidio iframe {
-    width: 520px !important;
+    width: 480px !important;
   }
+  .next-vidio {
+    position: absolute;
+    top: 72rem;
+    left: 10rem;
+  }
+  .list-vidio {
+    position: absolute;
+    top: 75rem ;
+    left: 10rem;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .three {
+    display: none;
+  }
+  .vidio-one iframe {
+    width: 200px !important;
+  }
+}
 
+@media screen and (max-width: 580px) {
+  .display-vidio iframe {
+    width: 380px !important;
+  }
+  .next-vidio {
+    position: absolute;
+    top: 72rem;
+  }
+  .list-vidio {
+    position: absolute;
+    top: 75rem ;
+    left: 10rem;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .three {
+    display: none;
+  }
+  .vidio-one iframe {
+    width: 160px !important;
+  }
+  .vidio-one h4 {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-
+  .display-vidio iframe {
+    width: 260px !important;
+    height: 240px;
+  }
+  .title-vidio h1 {
+  font-size: 2rem;
+  width: 100%;
+  }
+  .next-vidio {
+    position: absolute;
+    top: 39rem;
+    left: 10rem;
+  }
+  .list-vidio {
+    position: absolute;
+    top: 40rem ;
+    left: 10rem;
+    width: 70%;
+    justify-content: space-between;
+  }
+  .three {
+    display: none;
+  }
+  .vidio-one iframe {
+    width: 120px !important;
+    height: 70px;
+  }
+  .vidio-one h4 {
+    width: 80%;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  .display-vidio iframe {
+    width: 180px !important;
+    height: 180px;
+    left: 1rem !important;
+  }
+  .title-vidio h1 {
+  font-size: 2rem;
+  width: 100%;
+  }
+  .next-vidio {
+    position: absolute;
+    top: 39rem;
+    left: 2rem !important;
+  }
+  .list-vidio {
+    position: absolute;
+    left: -10rem !important;
+    top: 40rem ;
+    width: 70%;
+    justify-content: space-between;
+  }
+  .three {
+    display: none;
+  }
+  .vidio-one iframe {
+    width: 60px !important;
+    height: 30px !important;
+  }
+  .vidio-one h4 {
+    font-size: 1rem !important;
+    width: 80%;
+  }
+}
 
 /* Auth Style */
 
