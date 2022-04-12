@@ -7,10 +7,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Chakra Petch', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@font-face {
+  font-family: 'Chakra Petch';
+  src: url('../font/ChakraPetch.ttf');
+}
 
 @font-face {
   font-family: airbnb;
@@ -143,7 +145,7 @@ cursor: pointer;
 
 .search img {
   width: 3rem;
-  height: auto;
+  height: 3rem;
 }
 
 .hero .content .cover .search .input {
