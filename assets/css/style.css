@@ -27,6 +27,13 @@ body {
   width: 100%;
 }
 
+.nav-icon {
+  display: none;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 .text-nav {
   color: var(--global-text-secondary) !important;
   font-size: 1.8rem;
@@ -36,6 +43,12 @@ body {
 
 .text-nav:hover {
   color: var(--global-color-secondary) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-icon {
+    display: inline;
+  }
 }
 
 /* Landing Page */
@@ -365,12 +378,15 @@ cursor: pointer;
   margin-bottom: 10rem !important;
 }
 
+@media screen and (max-widt: 990) {
+  .secondary-navbar {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   * {
     font-size: 50%;
-  }
-  .secondary-navbar {
-    display: none;
   }
   .search {
     width: 40rem !important;
@@ -447,9 +463,6 @@ cursor: pointer;
     display: flex;
     bottom: -25rem;
   }
-  .wrapping-image {
-    margin-left: -2.5rem !important;
-  }
   .box-image h4 {
     left: -8rem !important;
   }
@@ -474,7 +487,6 @@ cursor: pointer;
     width: 35rem !important;
   }
 }
-
 
 /* Detail Recipe */
 
@@ -938,10 +950,24 @@ cursor: pointer;
   font-size: 2.5rem;
 }
 
-.edit-recipe {
+.bg-edit {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem !important;
+  width: 3.5rem !important;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.bg-edit:hover {
+  background-color: var(--global-color-primary);
+}
+
+.edit-recipe {
   height: 3rem !important;
   width: 3rem !important;
 }
@@ -1218,7 +1244,7 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../image/beginning.png');
+  background-image: url('../image/beginning.webp');
   height: 100vh;
   width: 50vw;
   background-repeat: no-repeat;
@@ -1290,10 +1316,8 @@ cursor: pointer;
 .auth .fw {
   margin-top: 1rem;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 37rem;
+  justify-content: end;
+  width: 68%;
 }
 
 .auth .fw .forgot {
@@ -1312,7 +1336,7 @@ cursor: pointer;
   box-sizing: border-box;
   font-size: 1.2rem;
   border: 1px solid #8692A6;
-  background-color: var(--global-color-primary);
+  background-color: #fff;
 }
 
 .auth .form-auth .input-text:focus {
@@ -1376,7 +1400,7 @@ cursor: pointer;
 }
 
 .auth .register:hover {
-color: #ffe058
+  color: #ffe058
 }
 
 .height-form {
@@ -1394,6 +1418,9 @@ color: #ffe058
 }
 
 @media screen and (max-width: 780px) {
+  .auth {
+    width: 100vw;
+  }
   .container-action {
     display: flex;
     align-items: center;
@@ -1411,9 +1438,6 @@ color: #ffe058
     position: relative;
     z-index: 99;
   }
-  .auth .form-auth .input-text {
-    width: 30rem;
-  }
 }
 
 @media screen and (max-width: 540px){
@@ -1427,23 +1451,20 @@ color: #ffe058
     width: 20rem;
     align-items: center;
   }
-  .auth .form-auth .input-text {
-    width: 30rem;
+  .auth .fw {
+    width: 70% !important;
   }
 }
 
 @media screen and (max-width: 420px){
-  .auth .form-auth .input-text {
-    width: 20rem;
-  }
   .checkbox {
     width: 15rem !important;
   }
   .auth .fw {
     width: 20rem;
   }
-  .txt-st {
-    font-size: 2rem !important;
+  .auth .fw {
+    width: 95% !important;
   }
 }
 
